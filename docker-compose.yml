@@ -11,7 +11,7 @@ services:
     ports:
       - 27017:27017
     volume:
-      - /root/baixiang/mongodata:/data/db
+      - /home/baixiang/mongodata:/data/db
 
   mongo-express:
     image: mongo-express
