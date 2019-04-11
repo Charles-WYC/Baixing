@@ -23,7 +23,7 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
 
   baixing:
-    image: xiaoyaolang/python_scrapy_pymongo
+    image: xiaoyaolang/baixing
     network_mode: "host"
     volumes:
       - /home/baixing/repo/Baixing/baixing:/home
