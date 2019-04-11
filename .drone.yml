@@ -24,5 +24,10 @@ steps:
     image: badouralix/python-scrapy
     commands:
       - cd baixing
-      - scrapy crawl baixing
+      - timeout 60 scrapy crawl baixing || echo timeout
+      - ls
+      - cd baixing
+      - ls
+      - cd spiders
+      - ls
 
