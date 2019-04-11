@@ -3,6 +3,7 @@ import scrapy
 import re
 import codecs
 import time
+import pymongo
 
 class BaixingpageSpider(scrapy.Spider):
     name = "baixingPage"
@@ -69,7 +70,7 @@ class BaixingpageSpider(scrapy.Spider):
             }
             try:
                 self.collection.insert(temp)
-           except:
+            except:
                 logFile.write("DuplicateKeyError")
                 logFile.write('\n')
         else:
