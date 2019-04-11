@@ -21,7 +21,7 @@ steps:
     detach: true
 
   - name: baixing
-    image: badouralix/python-scrapy
+    image: xiaoyaolang/python_scrapy_pymongo
     commands:
       - cd baixing
       - timeout 60 scrapy crawl baixing || echo timeout
