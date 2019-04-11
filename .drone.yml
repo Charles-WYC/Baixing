@@ -1,0 +1,27 @@
+kind: pipline
+name: baixing
+
+steps:
+  - name: mongo
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    detach: true
+
+  - name: mongo-express
+    image: mongo-express
+    restart: always
+    ports:
+      - 1234:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    detach: true
+
+  - name: sleep
+    image: busybox
+    commands:
+      - sleep 10000
+
