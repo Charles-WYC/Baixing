@@ -10,7 +10,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     ports:
       - 27017:27017
-    volume:
+    volumes:
       - /home/baixiang/mongodata:/data/db
 
   mongo-express:
