@@ -20,8 +20,9 @@ steps:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
     detach: true
 
-  - name: sleep
-    image: busybox
+  - name: baixing
+    image: python:2.7
     commands:
-      - sleep 10000
+      - cd baixing
+      - scrapy crawl baixing
 
