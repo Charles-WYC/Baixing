@@ -19,6 +19,7 @@ MONGODB_PORT = 27017
 MONGODB_DB = "Baixing"
 MONGODB_COLLECTION = "Page"
 
+ROBOTSTXT_OBEY=False
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'baixing (+http://www.yourdomain.com)'
 
