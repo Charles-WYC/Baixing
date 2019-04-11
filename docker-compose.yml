@@ -24,7 +24,6 @@ services:
 
   baixing:
     image: xiaoyaolang/python_scrapy_pymongo
-    networks:
-      - host
+    network_mode: "host"
     volumes:
       - /home/baixing/repo/Baixing/baixing:/home
