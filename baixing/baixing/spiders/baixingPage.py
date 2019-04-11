@@ -41,7 +41,7 @@ class BaixingpageSpider(scrapy.Spider):
         logFile = codecs.open("log.txt", "w", "utf-8")
         logFile.close()
         time.sleep(30)
-        connection = pymongo.MongoClient('mongodb://root:example@mongo:27017/')
+        connection = pymongo.MongoClient(settings['MONGODB_SERVER'], settings['MONGODB_PORT'])
         db = connection[settings['MONGODB_DB']]
         self.collection = db[settings['MONGODB_COLLECTION']]
         

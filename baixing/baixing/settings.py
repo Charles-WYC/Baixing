@@ -14,7 +14,7 @@ BOT_NAME = 'baixing'
 SPIDER_MODULES = ['baixing.spiders']
 NEWSPIDER_MODULE = 'baixing.spiders'
 
-MONGODB_SERVER = "127.0.0.1"
+MONGODB_SERVER = "mongo"
 MONGODB_PORT = 27017
 MONGODB_DB = "Baixing"
 MONGODB_COLLECTION = "Page"
