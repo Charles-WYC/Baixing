@@ -40,10 +40,10 @@ class BaixingpageSpider(scrapy.Spider):
 
         logFile = codecs.open("log.txt", "w", "utf-8")
         logFile.close()
-        time.sleep(30)
-        connection = pymongo.MongoClient(self.settings['MONGODB_SERVER'], self.settings['MONGODB_PORT'])
-        db = connection[self.settings['MONGODB_DB']]
-        self.collection = db[self.settings['MONGODB_COLLECTION']]
+        # time.sleep(30)
+        connection = pymongo.MongoClient('mongo', 27017)
+        db = connection['Baixing']
+        self.collection = db['Page']
         
 
     def start_requests(self):
