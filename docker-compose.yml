@@ -28,7 +28,6 @@ services:
 
   baixing:
     image: xiaoyaolang/baixing
-    network_mode: "host"
     volumes:
       - /home/baixing/repo/Baixing/baixing:/home
     networks:
