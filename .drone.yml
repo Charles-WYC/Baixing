@@ -13,8 +13,8 @@ steps:
   - name: mongo-express
     image: mongo-express
     restart: always
-    ports:
-      - 1234:8081
+    # ports:
+      # - 1234:8081
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
