@@ -12,6 +12,8 @@ services:
       - 27017:27017
     volumes:
       - /home/baixing/mongodata:/data/db
+    networks:
+      - baixingNet
 
   mongo-express:
     image: mongo-express
@@ -21,9 +23,16 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    networks:
+      - baixingNet
 
   baixing:
     image: xiaoyaolang/baixing
     network_mode: "host"
     volumes:
       - /home/baixing/repo/Baixing/baixing:/home
+    networks:
+      - baixingNet
+
+networks:
+  baixingNet:
