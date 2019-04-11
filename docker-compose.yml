@@ -27,4 +27,4 @@ services:
     networks:
       - host
     volumes:
-      - /home/baixing/Baixing/baixing:/home
+      - /home/baixing/repo/Baixing/baixing:/home
