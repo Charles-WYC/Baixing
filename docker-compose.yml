@@ -11,7 +11,7 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - /home/baixiang/mongodata:/data/db
+      - /home/baixing/mongodata:/data/db
 
   mongo-express:
     image: mongo-express
@@ -21,3 +21,10 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+  baixing:
+    image: xiaoyaolang/python_scrapy_pymongo
+    networks:
+      - host
+    volumes:
+      - /home/baixing/Baixing/baixing:/home
