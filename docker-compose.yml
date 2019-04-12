@@ -27,7 +27,7 @@ services:
       - baixingNet
 
   baixing:
-    image: xiaoyaolang/python_scrapy_pymongo
+    image: xiaoyaolang/baixing
     volumes:
       - /home/baixing/repo/Baixing/baixing:/home
     networks:

@@ -20,6 +20,7 @@ MONGODB_DB = "Baixing"
 MONGODB_COLLECTION = "Page"
 
 ROBOTSTXT_OBEY=False
+HTTPERROR_ALLOWED_CODES = [403, 404]
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'baixing (+http://www.yourdomain.com)'
 
