@@ -24,7 +24,7 @@ steps:
     image: xiaoyaolang/python_scrapy_pymongo
     commands:
       - cd baixing
-      - timeout 60 scrapy crawl baixingClass || echo timeout
+      - timeout 60 scrapy crawl baixingPage || echo timeout
       - ls
       - cd baixing
       - ls
