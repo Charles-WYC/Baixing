@@ -11,7 +11,7 @@ class BaixingpageSpider(scrapy.Spider):
 
     pages =[]
     TotalPageNum = 0
-    nowPageNum =-1
+    nowPageNum =95000
     errorNum = 0
 
     hdr = {
